@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
 </head>
 <body>
@@ -17,7 +18,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="{% static 'logo.png' %}"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -26,6 +28,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">
     <h1>World's <span>Bigg</span>est Univer<span>sity</span></h1>
@@ -33,6 +36,37 @@
     <a href="" class="hero-btn">Visit Us To Know More</a>
 </div>            
     </section>
-    
+
+
+
+
+    <section class="course">
+        <h1>Course We Offers</h1>
+        <p>Explore our top courses and skills, loved by learners and developed by leading experts.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>......</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>......</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>......</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
 </body>
 </html>
