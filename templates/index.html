@@ -11,13 +11,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     
 </head>
 <body>
     {% load static %}
     <section class="header">
         <nav>
-            <a href="index.html"><img src="{% static 'logo.png' %}"></a>
+            <img src="{% static 'logo.png' %}" alt="">
+            
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -46,17 +49,119 @@
         <div class="row">
             <div class="course-col">
                 <h3>Intermediate</h3>
-                <p>......</p>
+                <p>Students have more opportunities to participate in class discussions. They also have more opportunities to work with their professors.</p>
             </div>
             <div class="course-col">
-                <h3>Degree</h3>
-                <p>......</p>
+                <h3>Degrees</h3>
+                <p>A degree is a certificate awarded by the college or university on the successful completion of studies at a particular level in a stream opted by him.</p>
             </div>
             <div class="course-col">
                 <h3>Post Graduation</h3>
-                <p>......</p>
+                <p>Whether you have already started your bachelor’s degree or you’re still in high school, it’s nice to get an idea of what your options are. This can help you plan the classes you want to take in college or university and make the most of your degree.</p>
             </div>
         </div>
+    </section>
+
+
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>A campus traditionally refers to the land and buildings of a university. This will often include libraries, lecture halls, student centers and, for residential universities, residence halls and dining halls.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="{% static 'london.png' %}">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'newyork.png' %}">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="{% static 'washington.png' %}">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>College campuses must provide a safe environment for students, including easily accessible healthcare and counseling services. On-campus health facilities offering medical care, mental health support and wellness initiatives are essential to meet the physical and mental needs of students.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="{% static 'library.png' %}">
+                <h3>World Class Library</h3>
+                <p>An academic library generally is a centre of academic activities. Academic library is attached to academic institutions to support the class room teaching and fulfilling the objectives of modern education.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static 'basketball.png' %}">
+                <h3>Largest Play Ground</h3>
+                <p>We have one of the largest playgrounds in the campus among the University which is well equipped for cricket, football, basketball, and other games. The college has the following Sports and Games facility for the students.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="{% static 'cafeteria.png' %}">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Canteens, they say are an important part of college life, considering they’re the only place where you find most students chatting and gossiping.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <h1>What Our Students Says</h1>
+        <p>About our University</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="{% static 'user11.jpg' %}">
+                <div>
+                    <p>The teachers are well-qualified in this college and are very knowledgeable.They will guide you through the semester and exams.</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>   
+            </div>
+            <div class="testimonials-col">
+                <img src="{% static 'user22.jpg' %}">
+                <div>
+                    <p>There is a good infrastructure in this college. A high percentage of students get placed every year and a good percentage of students get internships.</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>   
+            </div>
+            <div class="testimonials-col">
+                <img src="{% static 'user31.jpg' %}">
+                <div>
+                    <p>The college are quite decent. Labs are clean, and all safety measures are taken while conducting experiments during practical sessions.</p>
+                    <h3>Aarav</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="cta">
+        <h1>Enroll for Our Various Online Courses Anywhere from The World</h1>
+        <a href="">CONTACT US</a>
     </section>
 
     <script>
