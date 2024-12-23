@@ -9,8 +9,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    background: rgb(76, 110, 141);
-    background-image: url('banner.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(banner.jpg);
     position: relative;
 }
 span {
@@ -298,7 +297,7 @@ h3{
 .cta{
     margin: 100% auto;
     width: 80%;
-    background-image: url('banner2.jpg');
+    background-image: linear-gradient(rgba(8, 14, 37, 0.7), rgba(7, 11, 29, 0.7)), url(banner2.jpg);
     background-color: rgba(82, 75, 75, 0.7);
     background-position: center;
     background-size: cover;
@@ -346,7 +345,7 @@ h3{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: url('background.jpg');
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(background.jpg);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -354,7 +353,7 @@ h3{
 }
 
 .sub-header h1{
-    margin-top: 100%;
+    margin-top: 100px;
 }
 
 .about-us{
