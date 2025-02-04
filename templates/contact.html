@@ -33,21 +33,55 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>About <span>Us</span></h1>        
+        <h1>Contact <span>Us</span></h1>        
     </section>
 
-    <section class="about-us">
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.6187849672738!2d79.80004797054339!3d11.931596410984492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a536152b060e44b%3A0x6c0122e2eb961667!2sCareer%20Craft%20Academy!5e0!3m2!1sen!2sin!4v1736331688667!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+
+    <section class="contact-us">
         <div class="row">
-            <div class="about-col">
-                <h1>We are The World's Largest University</h1>
-                <p>An institution is a humanly devised structure of rules and norms that shape and constrain social behavior. All definitions of institutions generally entail that there is a level of persistence and continuity. Laws, rules, social conventions and norms are all examples of institutions.Institutions vary in their level of formality and informality.</p>
-                <a href="" class="hero-btn red-btn">Explore Now</a>
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span class="span2">
+                        <h5>19 & 20, Villiyanur Main Road, Victoria Nagar Main Road</h5>
+                        <p>Reddiarpalayam, Puducherry, 605010</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span class="span2">
+                        <h5>+91 9087753999</h5>
+                        <p>Monday to Saturday, 10AM to 7 PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="span2">
+                        <h5>info@careercraftacademy.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
             </div>
-            <div class="about-col">
-                <img src="{% static 'about1.jpg' %}" alt="">
+            <div class="contact-col">
+                <form action="" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subjects" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
+
 
 
 

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +15,11 @@
 </head>
 <body>
     {% load static %}
-    <section class="header">
+    <section class="sub-header">
         <nav>
             <img src="{% static 'logo.png' %}" alt="">
             
-            <div class="nav-links" id="navLinks"> 
+            <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="{% url 'index' %}">HOME</a></li>
@@ -33,15 +31,8 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-<div class="text-box">
-    <h1>World's <span>Bigg</span>est Univer<span>sity</span></h1>
-    <p>College provides specialized knowledge and skills in a particular field of study, <br>preparing students for careers in specific industries.</p>
-    <a href="https://www.stanford.edu/news/" class="hero-btn">Visit Us To Know More</a>
-</div>            
+        <h1>Our <span>Courses</span></h1>        
     </section>
-
-
-
 
     <section class="course">
         <h1>Course We Offers</h1>
@@ -61,35 +52,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <section class="campus">
-        <h1>Our Global Campus</h1>
-        <p>A campus traditionally refers to the land and buildings of a university. This will often include libraries, lecture halls, student centers and, for residential universities, residence halls and dining halls.</p>
-        <div class="row">
-            <div class="campus-col">
-                <img src="{% static 'london.png' %}">
-                <div class="layer">
-                    <h3>LONDON</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="{% static 'newyork.png' %}">
-                <div class="layer">
-                    <h3>NEW YORK</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="{% static 'washington.png' %}">
-                <div class="layer">
-                    <h3>WASHINGTON</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
 
     <section class="facilities">
         <h1>Our Facilities</h1>
@@ -113,59 +75,6 @@
         </div>
     </section>
 
-
-    <section class="testimonials">
-        <h1>What Our Students Says</h1>
-        <p>About our University</p>
-        <div class="row">
-            <div class="testimonials-col">
-                <img src="{% static 'user11.jpg' %}">
-                <div>
-                    <p>The teachers are well-qualified in this college and are very knowledgeable.They will guide you through the semester and exams.</p>
-                    <h3>Christine Berkley</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>   
-            </div>
-            <div class="testimonials-col">
-                <img src="{% static 'user22.jpg' %}">
-                <div>
-                    <p>There is a good infrastructure in this college. A high percentage of students get placed every year and a good percentage of students get internships.</p>
-                    <h3>David Byer</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>   
-            </div>
-            <div class="testimonials-col">
-                <img src="{% static 'user31.jpg' %}">
-                <div>
-                    <p>The college are quite decent. Labs are clean, and all safety measures are taken while conducting experiments during practical sessions.</p>
-                    <h3>Aarav</h3>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>   
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="cta">
-        <h1>Enroll for Our Various Online Courses <br>Anywhere from The World</h1>
-        <a href="{% url 'contact' %}" class="hero-btn">Contact Us</a>
-    </section>
-
-
-
     <section class="footer">
         <h4>About <span>Us</span></h4>
         <p>These Institutes provided facility of libraries and scientific instruments. They also offered salaries to tutors who prepared students to appear for examination and acquire a degree.</p>
@@ -188,5 +97,3 @@
             navLinks.style.right ="-200px";
         }
     </script>
-</body>
-</html>

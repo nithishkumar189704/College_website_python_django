@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    {% load static %}
+    <section class="sub-header">
+        <nav>
+            <img src="{% static 'logo.png' %}" alt="">
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{% url 'index' %}">HOME</a></li>
+                    <li><a href="{% url 'about' %}">ABOUT</a></li>
+                    <li><a href="{% url 'courses' %}">COURSES</a></li>
+                    <li><a href="{% url 'blog' %}">BLOG</a></li>
+                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>        
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="{% static 'certificate.jpg' %}">
+                <h2>Our Certificate & Online Programs For 2021</h2>
+                <p>Regional Accreditation: This is granted to universities and colleges in specific regions. It is the most common and prestigious form of accreditation in the United States. Examples of regional accrediting organizations include the Northwest Commission on Colleges and Universities (NWCCU) and the Southern Association of Colleges and Schools (SACS).</p>
+                <br>
+                <p>National Accreditation: This applies to vocational and technical schools or other educational institutions. It is often less prestigious than regional accreditation.</p>
+                <br>
+                <p>Programmatic Accreditation: This applies to specific academic programs within an institution, such as engineering, business, nursing, and law programs. Examples include the Accreditation Board for Engineering and Technology (ABET) or the Association to Advance Collegiate Schools of Business (AACSB).</p>
+                <br>
+                <p>Certificate Programs: Shorter than degree programs, certificate programs often focus on specific skills and industries, such as healthcare, IT, or business management. Professional Certifications: These are credentials awarded to students who complete certain coursework and examinations. These certifications might be related to fields like accounting (e.g., Certified Public Accountant - CPA), information technology (e.g., Cisco Certified Network Associate - CCNA), or project management (e.g., Project Management Professional - PMP).</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="button" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span class="span1">Business Analytics</span>
+                    <span class="span1">21</span>
+                </div>
+                <div>
+                    <span class="span1">Data Science</span>
+                    <span class="span1">35</span>
+                </div>
+                <div>
+                    <span class="span1">Machine Learning</span>
+                    <span class="span1">12</span>
+                </div>
+                <div>
+                    <span class="span1">Computer Science</span>
+                    <span class="span1">38</span>
+                </div>
+                <div>
+                    <span class="span1">AutoCAD</span>
+                    <span class="span1">39</span>
+                </div>
+                <div>
+                    <span class="span1">Journalism</span>
+                    <span class="span1">19</span>
+                </div>
+                <div>
+                    <span class="span1">Commerce</span>
+                    <span class="span1">28</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About <span>Us</span></h4>
+        <p>These Institutes provided facility of libraries and scientific instruments. They also offered salaries to tutors who prepared students to appear for examination and acquire a degree.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-pinterest"></i> 
+        </div>
+        <p>Made with by <i class="fa fa-heart"></i> Nithish <i class="fa fa-heart"></i></p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
